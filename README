@@ -9,6 +9,8 @@ directory.
 Compiling instructions:
 	Type only the make command. It will compile the package and generates an
 	executable.
+	To test if the program has compiled correctly use make tests to test the
+	program. After this run make testsClean.
 	
 Usage:
 	apkg - about.pkg file generator

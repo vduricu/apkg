@@ -17,8 +17,19 @@ main.o:
 package.o:
 	$(CC) $(CFLAGS) $(LIBPKG)package.c
 
+tests: package.o tests.o
+	$(CC) package.o tests.o -o test
+	./test
+	make testsClean
+
+tests.o:
+	$(CC) $(CFLAGS) tests/tests.c
+
 clean:
 	rm -rf *.o $(BINDIR)/$(EXECUTABLE)
+	
+testsClean:
+	rm -rf package.o tests.o test tests/*.pkg
 	
 #install:
 #	cp $(BINDIR)/$(EXECUTABLE) /bin/$(EXECUTABLE)
