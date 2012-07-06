@@ -1,0 +1,43 @@
+#########################################################################################
+File: HEADER
+Description: The headers used for package description.
+Date: 05.07.2012
+Author: thg2oo6
+######################################################################################### 
+
+The main headers used by about.pkg file generator are:
+
+	> SPK    (0)	- The default header used by the application. All the instructions
+					  required for the package to be executed/installed/compiled are
+				  	  specified in the instruction script.
+	> SCPK   (1)	- The header used when the package is a core package for the system.
+				  	  The content of this package may be a source, a library to be installed,
+				  	  an installation script etc.
+	> SDPK   (2)	- The header used when the package contains downloadable content.
+				  	  The header defines 4 subheaders, one for each type of header that
+				  	  defines a content type (core, runnable, installable or source).
+				  	  The content to be downloaded will be contained in download.list.
+	> SRPK   (3)	- The header used when the package contains runnable content. When an
+				  	  application has runnable content, it may not be installed. If an
+				  	  installation instruction is written in the instruction script, than
+				  	  the package may be installed.
+	> SIPK   (4)	- The header used when the package has an installable content. The
+				  	  installation instruction are written in the instruction script.
+	> SSPK   (5)	- The header used when the package has a source in its content. The
+				  	  compilation + installation instruction are written in the instruction
+				  	  script. 
+
+There are 4 subheaders used for an extra description of the downloadable package:
+
+	> SDCPK  (6)	- The header used when the package is a core package and has
+					  downloadable content. All the downloadable content will be located
+					  in the file download.list.
+	> SDRPK  (7)	- The header used when the package is a runnable package and has
+					  downloadable content. All the downloadable content will be located
+					  in the file download.list.
+	> SDIPK  (8)	- The header used when the package is a installable package and has
+					  downloadable content. All the downloadable content will be located
+					  in the file download.list.
+	> SDSPK  (9)	- The header used when the package is a source package and has
+					  downloadable content. All the downloadable content will be located
+					  in the file download.list.

@@ -1,0 +1,18 @@
+#########################################################################################
+File: TYPES
+Description: The types used for package description.
+Date: 05.07.2012
+Author: thg2oo6
+######################################################################################### 
+
+The "type" member of the package structure represents the type of the content of package.
+The main types defined by our system are:
+
+	> core		- here we can find all the core applications, like bash, gcc, g++ etc
+	> kernel	- here we can find the kernel related libraries, headers or the kernel
+	> libraries	- here we can find the libraries, that are not from the core package
+	> editors	- here we can find the text editors
+	> video		- here we can find video drivers + X11
+	> utils		- here we can find utilities needed by the system
+
+Extra categories may be defined later in this file and in the main application.

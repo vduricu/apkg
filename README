@@ -1,0 +1,25 @@
+about.pkg file generator
+    
+This program generates an about.pkg file, for using in SPM packaging system.
+The generated file describes the content of the package, holding information
+like: name, version, type and package type. For more information about type
+and package type (header) please read HEADERS & TYPES from the package
+directory.
+
+Compiling instructions:
+	Type only the make command. It will compile the package and generates an
+	executable.
+	
+Usage:
+	apkg - about.pkg file generator
+	[usage]: apkg -p package -v version -t type [-h header]
+	         apkg -r about.pkg\n
+	Options:
+	      -p package   = defines the name of the package
+	      -v version   = defines the version of the package
+	      -t type      = defines the type of the package (read TYPES)
+	      -h header    = defines the header of the package (read HEADERS)
+	      -r about.pkg = reads an about.pkg file\n
+	Other options:
+	      -? = displays the usage
+	      -# = version
