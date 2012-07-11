@@ -63,8 +63,7 @@ int position_cmd(char* cmd, int argc, char* argv[]){
 }
 
 void error_cmd(const char* msg, int error){
-	printf(msg);
-	printf("\n");
+	printf("%s\n",msg);
 	exit(error);
 }
 
